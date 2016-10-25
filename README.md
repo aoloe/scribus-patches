@@ -17,7 +17,13 @@ This repository contains a set of patches that implements those features and can
 
 - Activate the new Scripter
 
-# Patches that should be created
+## Patches that should be created
+
+- by default place the tools toolbar on the left and hide the other toolbars
+
+### User interface
+
+### Text frames
 
 - remove the "Unlik with copy" and rename "Unlink with cut" as "Item > Text frames > Unlink and cut Text" (or better name)  
   https://bugs.scribus.net/view.php?id=14327
