@@ -19,9 +19,11 @@ This repository contains a set of patches that implements those features and can
 
 ## Patches that should be created
 
-- by default place the tools toolbar on the left and hide the other toolbars
-
 ### User interface
+
+- by default place the tools toolbar on the left and hide the other toolbars
+- by default show the properties palette and dock it to the right side
+- by default do not show the multiple actions open / new / template dialog
 
 ### Text frames
 
@@ -31,3 +33,7 @@ This repository contains a set of patches that implements those features and can
   https://bugs.scribus.net/view.php?id=14325
 - add a "chain before" entry in the "Item > Text frames" dialog  
   https://bugs.scribus.net/view.php?id=14326
+
+### Others
+
+- Remove all templates
