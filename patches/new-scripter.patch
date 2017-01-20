@@ -1,0 +1,28 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 6e927ac..70ef5b0 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -713,7 +713,8 @@ ENDIF(TIFF_FOUND)
+ 
+ #<< PYTHON
+ #SET(PythonLibs_FIND_VERSION 2)
+-FIND_PACKAGE(PythonLibs 2 REQUIRED)
++# FIND_PACKAGE(PythonLibs 2 REQUIRED)
++FIND_PACKAGE(PythonLibs 3 REQUIRED)
+ IF (PYTHON_LIBRARY)
+ 	MESSAGE("Python Library Found OK")
+ 	SET(HAVE_PYTHON 1)
+diff --git a/scribus/plugins/CMakeLists.txt b/scribus/plugins/CMakeLists.txt
+index fae2a38..72cf70b 100644
+--- a/scribus/plugins/CMakeLists.txt
++++ b/scribus/plugins/CMakeLists.txt
+@@ -16,7 +16,8 @@ IF(NOT WANT_SCRIPTER2)
+ ELSE(NOT WANT_SCRIPTER2)
+   #scripter2
+   MESSAGE(STATUS "Building with Scripter 2")
+-  ADD_SUBDIRECTORY(scripter)
++  # ADD_SUBDIRECTORY(scripter)
++  ADD_SUBDIRECTORY(scripter-dev)
+ ENDIF(NOT WANT_SCRIPTER2)
+ ADD_SUBDIRECTORY(short-words)
+ ADD_SUBDIRECTORY(tools)

@@ -1,0 +1,33 @@
+diff --git a/scribus/plugins/gettext/htmlim/htmlreader.cpp b/scribus/plugins/gettext/htmlim/htmlreader.cpp
+index 74e444517..2f2dfddda 100644
+--- a/scribus/plugins/gettext/htmlim/htmlreader.cpp
++++ b/scribus/plugins/gettext/htmlim/htmlreader.cpp
+@@ -609,6 +609,16 @@ void HTMLReader::parse(QString filename)
+ 	htmlSAXParseFile(fn.data(), NULL, mySAXHandler, NULL);
+ }
+ 
++void HTMLReader::parseString(QString content)
++{
++	elemJustStarted = elemJustFinished = false;
++
++	QByteArray rawContent = content.toLocal8Bit();
++	xmlChar *contentCStr = (xmlChar*) rawContent.data();
++
++	htmlSAXParseDoc(contentCStr, NULL, mySAXHandler, NULL);
++}
++
+ void HTMLReader::createListStyle()
+ {
+ 	gtParagraphStyle* tmpStyle = new gtParagraphStyle(*listStyles[0]);
+diff --git a/scribus/plugins/gettext/htmlim/htmlreader.h b/scribus/plugins/gettext/htmlim/htmlreader.h
+index edfce0136..ec5999b09 100644
+--- a/scribus/plugins/gettext/htmlim/htmlreader.h
++++ b/scribus/plugins/gettext/htmlim/htmlreader.h
+@@ -105,6 +105,7 @@ public:
+ 	HTMLReader(gtParagraphStyle *ps, gtWriter *w, bool textOnly);
+ 	~HTMLReader();
+ 	void parse(QString filename);
++	void parseString(QString content);
+ 	static void startElement(void *user_data, const xmlChar * fullname, const xmlChar ** atts);
+ 	static void endElement(void *user_data, const xmlChar * name);
+ 	static void characters(void *user_data, const xmlChar * ch, int len);
