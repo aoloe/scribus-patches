@@ -33,6 +33,7 @@ This repository contains a set of patches that implements those features and can
   https://bugs.scribus.net/view.php?id=14325
 - add a "chain before" entry in the "Item > Text frames" dialog  
   https://bugs.scribus.net/view.php?id=14326
+- remove the "Automatic creation of text frames" from the new dialog (eventually put it in the document settings)
 
 ### Others
 
