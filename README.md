@@ -21,7 +21,15 @@ This repository contains a set of patches that implements those features and can
 
 ### User interface
 
-- by default place the tools toolbar on the left and hide the other toolbars
+- toolbars
+  - by default place the tools toolbar on the left and hide the other toolbars
+  - remove rarely used and unstable tools from the tools toolbar:
+    - table (unstable)
+    - spirals,
+    - caligraphy,
+    - freehand line (that should not be a tool)
+    - barcode,
+    - polygon (not 100% sure...)
 - by default show the properties palette and dock it to the right side
 - by default do not show the multiple actions open / new / template dialog
 
