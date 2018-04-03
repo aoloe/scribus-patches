@@ -35,6 +35,11 @@ This repository contains a set of patches that implements those features and can
   https://bugs.scribus.net/view.php?id=14326
 - remove the "Automatic creation of text frames" from the new dialog (eventually put it in the document settings)
 
+### Frames
+
+- unify the shortcut commands for "Fit frame to text" and "Ajust frame to image" into "Fit frame to content" and assigne the `ctrl-=` shortcut.
+
+
 ### Others
 
 - Remove all templates
