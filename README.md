@@ -10,8 +10,6 @@ This repository contains a set of patches that implements those features and can
 
 ## The existing patches
 
-- Remove the hack that enables the single click on Fedora and breaks all other Linux systems.  
-  `file-open-shortcuts.patch`
 
 ## Patch that exist but are not complete / enabled by default
 
