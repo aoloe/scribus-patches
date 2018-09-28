@@ -10,6 +10,7 @@ This repository contains a set of patches that implements those features and can
 
 ## The existing patches
 
+- do not reset the x,y position and scale when loading a new image in a non empty image frame. [#12253](https://bugs.scribus.net/view.php?id=12253#c33146)
 
 ## Patch that exist but are not complete / enabled by default
 
