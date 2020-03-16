@@ -49,4 +49,7 @@ This repository contains a set of patches that implements those features and can
 
 ### Others
 
+- Defaults:
+  - pick a sane default for the fonts (add a list of good fonts and pick one if it's installed)
+
 - Remove all templates
